@@ -691,8 +691,7 @@ a:focus {
 .footer {
     position: relative;
     padding-top: 45px;
-    background: #121518;
-}
+ background: linear-gradient(135deg, #1a1a1a, #333);}
 
 .footer .newsletter {
     position: relative;
@@ -731,16 +730,16 @@ a:focus {
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #0085ff;
+    color: #f5c542;
     background: #121518;
     border-radius: 0;
-    border: 2px solid #0085ff;
+    border: 2px solid #f5c542;
     transition: .3s;
 }
 
 .footer .newsletter .btn:hover {
-    color: #ffffff;
-    background: #0085ff;
+    color: #000000;
+    background: #f5c542;
 }
 
 .footer .newsletter .btn:focus {
@@ -763,13 +762,14 @@ a:focus {
     font-size: 22px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #0085ff;
+    color: #ffffff;
 }
 
 .footer .footer-link a {
     display: block;
     margin-bottom: 10px;
     color: #dddddd;
+    /* font-family: cursive; */
     transition: .3s;
     text-transform: capitalize;
 }
@@ -783,7 +783,7 @@ a:focus {
 }
 
 .footer .footer-link a:hover {
-    color: #0085ff;
+    color: #f5c542;
     letter-spacing: 1px;
 }
 
@@ -803,7 +803,7 @@ a:focus {
 .footer .footer-social a i {
     margin-right: 15px;
     font-size: 18px;
-    color: #0085ff;
+    color: #ffffff;
 }
 
 .footer .footer-social a:last-child i {
@@ -811,7 +811,7 @@ a:focus {
 }
 
 .footer .footer-social a:hover i {
-    color: #dddddd;
+    color:#f5c542;
 }
 
 .footer .footer-menu .f-menu {
@@ -832,7 +832,7 @@ a:focus {
 }
 
 .footer .footer-menu .f-menu a:hover {
-    color: #0085ff;
+    color: #f5c542;
 }
 
 .footer .footer-menu .f-menu a:last-child {
@@ -855,7 +855,7 @@ a:focus {
 }
 
 .footer .copyright p a {
-    color: #0085ff;
+    color:#f5c542;
     font-weight: 500;
     letter-spacing: 1px;
 }
@@ -1121,6 +1121,7 @@ color: white;
 
 
 
+
   /* الـ container الأساسي */
   #brands-section {
     width: 100%;
@@ -1131,6 +1132,7 @@ color: white;
     justify-content: center;
     align-items: center;
     background: #2c2b2b;
+    
   }
 
   /* شبكة اللوجوهات */
@@ -1195,7 +1197,7 @@ color: white;
   font-size: 16px;
 }
 #sit{
-  height: 380px;
+  height: 480px;
 }
 #header {
     height: 400px;
