@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+<!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/ditailes.css">
+  <style></style>
+</head>
+<body>
+
+      <!-- NAVBAR -->
+
+      <nav style="">
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+      <div class="logo" >
+         Urban<span>Gents</span>
+      </div>
+
+<div class="nav-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Men’s</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#"> Contact</a></li>
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form style="width: 50px;" action="#">
+            <input  type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+    <!-- end NAVBAR -->
+
+
+  <div class="containerf">
+    <!-- Images -->
+    <div class="product-images">
+      <img src="pro/0031813185f0797a1a6b78ad63492e43.jpg" alt="Product" class="main-image" id="mainImage">
+      <div class="thumbnails" style="overflow: auto;">
+        <img src="pro/0031813185f0797a1a6b78ad63492e43.jpg" onclick="changeImage(this)">
+        <img src="pro/0d14d2685a8cafc0791c731eb0223535.jpg" onclick="changeImage(this)">
+        <img src="pro/111106105729cf84798bc8f8b95168ab2f40.jpg" onclick="changeImage(this)">
+        <img src="pro/16796eaf581e5b0617337c762c4acf82.jpg" onclick="changeImage(this)">
+      </div>
+    </div>
+
+    <!-- Details -->
+    <div class="product-details">
+      <div>
+        <h1 class="product-title">Premium Leather Sneakers</h1>
+        <p class="product-price">$249.99</p>
+        <p class="product-type">Category: Men's Footwear</p>
+        <p class="product-description">
+          These premium leather sneakers are crafted with 100% natural leather, providing durability, elegance, 
+          and comfort for daily wear. The modern design ensures versatility, making them perfect for both casual 
+          and semi-formal outfits. Breathable lining and cushioned soles guarantee maximum comfort all day long.
+        </p>
+ 
+
+
+        <div class="quantity">
+  <button onclick="decrease(this)">-</button>
+  <span class="num">1</span>
+  <button onclick="increase(this)">+</button>
+</div>
+
+
+<div class="sizes">
+  <strong>Select Size:</strong><br><br>
+  <label>
+    <input type="radio" name="size" value="40">
+    <span>40</span>
+  </label>
+  <label>
+    <input type="radio" name="size" value="41">
+    <span>41</span>
+  </label>
+  <label>
+    <input type="radio" name="size" value="42">
+    <span>42</span>
+  </label>
+  <label>
+    <input type="radio" name="size" value="43">
+    <span>43</span>
+  </label>
+  <label>
+    <input type="radio" name="size" value="44">
+    <span>44</span>
+  </label>
+</div>
+
+        <div class="buttons" style="margin-top: 6%;">
+          <button class="add-cart">Add to Cart</button>
+          <button class="buy-now">Buy Now</button>
+        </div>
+
+        <div class="extra-info">
+          <h4>Product Details:</h4>
+          <ul>
+            <li>Material: 100% Genuine Leather</li>
+            <li>Made in: Italy</li>
+            <li>Return Policy: 14 Days Free Return</li>
+            <li>Shipping: Free Worldwide Delivery</li>
+            <li>Delivery Time: 3-7 Business Days</li>
+          </ul>
+        </div>
+
+        <div class="specs">
+          <h4>Specifications:</h4>
+          <table>
+            <tr>
+              <th>Weight</th>
+              <td>1.2 kg</td>
+            </tr>
+            <tr>
+              <th>Dimensions</th>
+              <td>30 x 20 x 12 cm</td>
+            </tr>
+            <tr>
+              <th>Colors Available</th>
+              <td>Black, White, Navy</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="reviews">
+          <h4>Customer Reviews:</h4>
+          <div class="stars">★★★★★</div>
+          <div class="review-count">4.8/5 based on 128 reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <div class="reviews-containerf">
+    <div class="reviews-header">Customer Reviews</div>
+    <div class="reviews-scroll" id="reviews">
+      <div class="review">
+        <div class="review-avatar">A</div>
+        <div class="review-content">
+          <div class="review-header">
+            <div>
+              <div class="review-user">Ahmed Mohamed</div>
+              <div class="review-email">ahmed@example.com</div>
+            </div>
+            <div class="review-rating">★★★★★</div>
+          </div>
+          <div class="review-message">The product is excellent and the quality is very high. Highly recommended!</div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="review-avatar">S</div>
+        <div class="review-content">
+          <div class="review-header">
+            <div>
+              <div class="review-user">Sara Ali</div>
+              <div class="review-email">sara@example.com</div>
+            </div>
+            <div class="review-rating">★★★★☆</div>
+          </div>
+          <div class="review-message">The product is good but the packaging could be improved.</div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="review-avatar">M</div>
+        <div class="review-content">
+          <div class="review-header">
+            <div>
+              <div class="review-user">Mahmoud Abdullah</div>
+              <div class="review-email">mahmoud@example.com</div>
+            </div>
+            <div class="review-rating">★★★☆☆</div>
+          </div>
+          <div class="review-message">The quality is average and the price is a bit high.</div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="review-avatar">S</div>
+        <div class="review-content">
+          <div class="review-header">
+            <div>
+              <div class="review-user">Sara Ali</div>
+              <div class="review-email">sara@example.com</div>
+            </div>
+            <div class="review-rating">★★★★☆</div>
+          </div>
+          <div class="review-message">The product is good but the packaging could be improved.</div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="review-avatar">M</div>
+        <div class="review-content">
+          <div class="review-header">
+            <div>
+              <div class="review-user">Mahmoud Abdullah</div>
+              <div class="review-email">mahmoud@example.com</div>
+            </div>
+            <div class="review-rating">★★★☆☆</div>
+          </div>
+          <div class="review-message">The quality is average and the price is a bit high.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <swiper-container class="slider-products" pagination="true" pagination-clickable="true" space-between="10"
+    slides-per-view="3" breakpoints='{
+    "0": { "slidesPerView": 1 },
+    "640": { "slidesPerView": 2 },
+    "1024": { "slidesPerView": 3 }
+  }' style="background-color: white;margin-top: 1%;">
+
+    <swiper-slide>
+      <div class="product-box">
+        <img style="object-fit: contain;" src="pro/0031813185f0797a1a6b78ad63492e43.jpg" alt="Product 1">
+        <div class="fav-btn">♡</div>
+        <div class="product-info">
+          <div>
+            <div class="brand-name">Apple</div>
+            <h3>Smart Watch</h3>
+            <p>Latest generation smartwatch with fitness tracking, heart rate monitor, and water resistance.</p>
+          </div>
+          <div>
+            <div class="product-price">$199.99</div>
+            <a href="#" class="cart-btn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="product-box">
+        <img style="object-fit: contain;" src="pro/0209f510493623aee0b3eea35d121605.jpg" alt="Product 2">
+        <div class="fav-btn">♡</div>
+        <div class="product-info">
+          <div>
+            <div class="brand-name">Sony</div>
+            <h3>Wireless Headphones</h3>
+            <p>Noise cancelling headphones with crystal-clear sound and up to 20 hours of battery life.</p>
+          </div>
+          <div>
+            <div class="product-price">$149.99</div>
+            <a href="#" class="cart-btn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="product-box">
+        <img style="object-fit: contain;" src="pro/0d14d2685a8cafc0791c731eb0223535.jpg" alt="Product 3">
+        <div class="fav-btn">♡</div>
+        <div class="product-info">
+          <div>
+            <div class="brand-name">Logitech</div>
+            <h3>Gaming Mouse</h3>
+            <p>Ultra-fast response, customizable buttons, and RGB lighting for a better gaming experience.</p>
+          </div>
+          <div>
+            <div class="product-price">$59.99</div>
+            <a href="#" class="cart-btn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="product-box">
+        <img style="object-fit: contain;" src="pro/0ef113de4b877881bd328ee17f51f640.jpg" alt="Product 4">
+        <div class="fav-btn">♡</div>
+        <div class="product-info">
+          <div>
+            <div class="brand-name">Samsung</div>
+            <h3>4K TV</h3>
+            <p>Experience stunning visuals with vibrant colors and immersive sound quality.</p>
+          </div>
+          <div>
+            <div class="product-price">$899.99</div>
+            <a href="#" class="cart-btn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+  </swiper-container>
+
+
+
+
+
+
+<div style="width: 100%;height: 100px;background-color: white;"></div>
+
+
+
+
+
+
+
+  
+<div class="footer" data-aos="fade-up" style=>
+    <div class="container">
+        <div class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <div class="form">
+                <input class="form-control" placeholder="Enter your email">
+                <button class="btn">Subscribe</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p style="font-family: cursive;">
+are.
+We bring you the latest trends in shoes, outfits, and accessories, carefully curated to match every style and occasion.
+
+Our mission is simple: to make fashion accessible, stylish, and affordable for everyone.
+With high-quality products, modern designs, and a seamless shopping experience, we’re here to help you look and feel your best every day.
+
+Join us, explore our collections, and step into the world of fashion that’s made just for you.                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-link">
+                            <h3>Shop Categories</h3>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Jeans & Pants</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-link">
+                            <h3>Useful Links</h3>
+                            <a href="#">About Us</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Return Policy</a>
+                            <a href="#">Shipping Info</a>
+                            <a href="#">FAQs</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-contact">
+                            <h3>Get In Touch</h3>
+                            <p><i class="fa fa-map-marker-alt"></i>123 Fashion Street, New York, USA</p>
+                            <p><i class="fa fa-phone-alt"></i>+20 128 0402 765</p>
+                            <p><i class="fa fa-envelope"></i>support@menswear.com</p>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-menu">
+        <div class="f-menu">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Help</a>
+            <a href="#">FAQs</a>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="#">Men’s Wear Store</a>, All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Designed By <a href="#">Your Company</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+  <!-- Auto Scroll Extension -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+<script src="js/js.js"></script>
+  <script>
+   
+    // Example usage:
+  AOS.init();
+
+
+  </script>
+
+</body>
+</html>

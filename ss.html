@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+<!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+       <!-- <link rel="stylesheet" href="css/shop.css"> -->
+       <link rel="stylesheet" href="css/index.css">
+       <link rel="stylesheet" href="css/cart.css">
+
+       <style>
+        
+       </style>
+</head>
+<body>
+
+      <!-- NAVBAR -->
+
+      <nav style="">
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+      <div class="logo" >
+         Urban<span>Gents</span>
+      </div>
+
+<div class="nav-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Men’s</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#"> Contact</a></li>
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form style="width: 50px;" action="#">
+            <input  type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+    <!-- end NAVBAR -->
+
+<div class="products-header" style="">
+  <div style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.338);position: absolute; display: flex;align-items: center;justify-content: center;">
+    <div class="logo" style="font-size: 50px; font-weight: bold; color: white;">
+      Shop <span>Now</span>
+    </div>
+  </div>
+  <img src="752c0222c5a98b586db6128dea96793b.jpg" style="width: 100%;height: 100%;object-fit: cover;">
+  <div class="underline"></div>
+</div>
+
+
+
+<style>
+.products-header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+  margin: 0;
+  animation: fadeIn 2s ease;
+}
+
+.products-header .underline {
+  width: 120px;
+  height: 4px;
+  background: #ffcc00;
+  margin-top: 15px;
+  border-radius: 2px;
+  animation: expand 1.5s ease;
+}
+
+/* أنيميشن */
+@keyframes fadeIn {
+  0% {opacity: 0; transform: translateY(20px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+@keyframes expand {
+  0% {width: 0;}
+  100% {width: 120px;}
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .products-header {
+    height: 150px;
+  }
+  .products-header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  .products-header .underline {
+    width: 80px;
+    height: 3px;
+  }
+}
+</style>
+
+
+  <div id="vv"> 
+
+  <div class="shop-container">
+    <!-- Sidebar Filter -->
+    <div class="filter-sidebar" id="filterSidebar">
+      <h3>Filter</h3>
+      <div class="filter-group">
+        <h4>Size</h4>
+        <label><input type="checkbox"> XS</label>
+        <label><input type="checkbox"> Small</label>
+        <label><input type="checkbox"> Medium</label>
+        <label><input type="checkbox"> Large</label>
+        <label><input type="checkbox"> XL</label>
+        <label><input type="checkbox"> XXL</label>
+      </div>
+      <div class="filter-group">
+        <h4>Price</h4>
+        <label><input type="checkbox"> Under $50</label>
+        <label><input type="checkbox"> $50 - $100</label>
+        <label><input type="checkbox"> $100 - $200</label>
+        <label><input type="checkbox"> $200 - $300</label>
+        <label><input type="checkbox"> Above $300</label>
+      </div>
+      <div class="filter-group">
+        <h4>Color</h4>
+        <label><input type="checkbox"> Black</label>
+        <label><input type="checkbox"> White</label>
+        <label><input type="checkbox"> Red</label>
+        <label><input type="checkbox"> Blue</label>
+        <label><input type="checkbox"> Green</label>
+        <label><input type="checkbox"> Yellow</label>
+      </div>
+      <div class="filter-group">
+        <h4>Type</h4>
+        <label><input type="checkbox"> T-Shirts</label>
+        <label><input type="checkbox"> Hoodies</label>
+        <label><input type="checkbox"> Jackets</label>
+        <label><input type="checkbox"> Pants</label>
+        <label><input type="checkbox"> Shoes</label>
+      </div>
+      <div class="filter-group">
+        <h4>Brand</h4>
+        <label><input type="checkbox"> Nike</label>
+        <label><input type="checkbox"> Adidas</label>
+        <label><input type="checkbox"> Zara</label>
+        <label><input type="checkbox"> H&M</label>
+        <label><input type="checkbox"> Puma</label>
+        <label><input type="checkbox"> Reebok</label>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="products-container">
+      <div class="products-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="pro/11110ac552f070c845fd455751c97fd56a1.jpg" alt="Product">
+          <div class="overlay">
+            <button class="add">🛒 Add to Cart</button>
+            <button class="buy">⚡ Buy Now</button>
+          </div>
+          <div class="details">
+            <h3>Product 1</h3>
+            <div class="price">$49.99</div>
+            <p class="desc">Stylish and modern product description.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="pro/ttdcc358d4c4345e21591bfee2133678e4.jpg" alt="Product">
+          <div class="overlay">
+            <button class="add">🛒 Add to Cart</button>
+            <button class="buy">⚡ Buy Now</button>
+          </div>
+          <div class="details">
+            <h3>Product 2</h3>
+            <div class="price">$59.99</div>
+            <p class="desc">Premium quality product with smooth finish. Made with attention to detail.</p>
+          </div>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="pro/4811be0b31ff7762b8c5bae022d4b936.jpg" alt="Product">
+          <div class="overlay">
+            <button class="add">🛒 Add to Cart</button>
+            <button class="buy">⚡ Buy Now</button>
+          </div>
+          <div class="details">
+            <h3>Product 1</h3>
+            <div class="price">$49.99</div>
+            <p class="desc">Stylish and modern product description.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="pro/ccca26a0413d37119b231785896ee5fc20e.jpg" alt="Product">
+          <div class="overlay">
+            <button class="add">🛒 Add to Cart</button>
+            <button class="buy">⚡ Buy Now</button>
+          </div>
+          <div class="details">
+            <h3>Product 2</h3>
+            <div class="price">$59.99</div>
+            <p class="desc">Premium quality product with smooth finish. Made with attention to detail.</p>
+          </div>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="pro/13757206e946c088e1de7a9975313e84.jpg" alt="Product">
+          <div class="overlay">
+            <button class="add">🛒 Add to Cart</button>
+            <button class="buy">⚡ Buy Now</button>
+          </div>
+          <div class="details">
+            <h3>Product 1</h3>
+            <div class="price">$49.99</div>
+            <p class="desc">Stylish and modern product description.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="pro/78af5ddc996ed1df4c318cd4e64b2a82.jpg" alt="Product">
+          <div class="overlay">
+            <button class="add">🛒 Add to Cart</button>
+            <button class="buy">⚡ Buy Now</button>
+          </div>
+          <div class="details">
+            <h3>Product 2</h3>
+            <div class="price">$59.99</div>
+            <p class="desc">Premium quality product with smooth finish. Made with attention to detail.</p>
+          </div>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="pro/111106105729cf84798bc8f8b95168ab2f40.jpg" alt="Product">
+          <div class="overlay">
+            <button class="add">🛒 Add to Cart</button>
+            <button class="buy">⚡ Buy Now</button>
+          </div>
+          <div class="details">
+            <h3>Product 1</h3>
+            <div class="price">$49.99</div>
+            <p class="desc">Stylish and modern product description.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="pro/adbd56518a4067439254e23e0bc79b98.jpg" alt="Product">
+          <div class="overlay">
+            <button class="add">🛒 Add to Cart</button>
+            <button class="buy">⚡ Buy Now</button>
+          </div>
+          <div class="details">
+            <h3>Product 2</h3>
+            <div class="price">$59.99</div>
+            <p class="desc">Premium quality product with smooth finish. Made with attention to detail.</p>
+          </div>
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="pro/ccca26a0413d37119b231785896ee5fc20e.jpg" alt="Product">
+          <div class="overlay">
+            <button class="add">🛒 Add to Cart</button>
+            <button class="buy">⚡ Buy Now</button>
+          </div>
+          <div class="details">
+            <h3>Product 2</h3>
+            <div class="price">$59.99</div>
+            <p class="desc">Premium quality product with smooth finish. Made with attention to detail.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <!-- Mobile Filter Toggle -->
+  <div class="filter-toggle" onclick="toggleFilter()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M3 5h18v2H3V5zm4 6h10v2H7v-2zm-2 6h14v2H5v-2z"/>
+    </svg>
+    Filter
+  </div>
+
+
+
+
+<div class="footer" data-aos="fade-up" style=>
+    <div class="container">
+        <div class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <div class="form">
+                <input class="form-control" placeholder="Enter your email">
+                <button class="btn">Subscribe</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p style="font-family: cursive;">
+are.
+We bring you the latest trends in shoes, outfits, and accessories, carefully curated to match every style and occasion.
+
+Our mission is simple: to make fashion accessible, stylish, and affordable for everyone.
+With high-quality products, modern designs, and a seamless shopping experience, we’re here to help you look and feel your best every day.
+
+Join us, explore our collections, and step into the world of fashion that’s made just for you.                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-link">
+                            <h3>Shop Categories</h3>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Jeans & Pants</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-link">
+                            <h3>Useful Links</h3>
+                            <a href="#">About Us</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Return Policy</a>
+                            <a href="#">Shipping Info</a>
+                            <a href="#">FAQs</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-contact">
+                            <h3>Get In Touch</h3>
+                            <p><i class="fa fa-map-marker-alt"></i>123 Fashion Street, New York, USA</p>
+                            <p><i class="fa fa-phone-alt"></i>+20 128 0402 765</p>
+                            <p><i class="fa fa-envelope"></i>support@menswear.com</p>
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-menu">
+        <div class="f-menu">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+            <a href="#">Help</a>
+            <a href="#">FAQs</a>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="#">Men’s Wear Store</a>, All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Designed By <a href="#">Your Company</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Footer End -->
+
+  <!-- Splide JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+  <!-- Auto Scroll Extension -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   
+      <script src="js/js.js"></script>
+
+
+   <script>
+    
+  AOS.init();
+</script>
+
+
+</body>
+</html>
